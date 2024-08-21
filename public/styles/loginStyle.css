@@ -1,0 +1,65 @@
+body {
+  background: linear-gradient(135deg, rgba(71, 226, 71, 0.7), rgba(17, 153, 153, 0.7));
+  background-size: 400% 400%;
+  animation: gradientBackground 15s ease infinite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container form {
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container form input[type="text"], 
+.form-container form input[type="password"] {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.form-container form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: var(--agreen);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.form-container form input[type="submit"]:hover {
+  background-color: #45a049;
+}

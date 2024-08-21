@@ -1,0 +1,49 @@
+[
+  {
+    "name": "admin",
+    "password": "1234",
+    "age": "16",
+    "height": "170",
+    "weight": "70"
+  },
+  {
+    "name": "yousef",
+    "password": "123456",
+    "age": "17",
+    "height": "170",
+    "weight": "60",
+    "bmr": 1582
+  },
+  {
+    "name": "jemmy",
+    "password": "test",
+    "age": "15",
+    "height": "150",
+    "weight": "15",
+    "bmr": 1017
+  },
+  {
+    "name": "jemmy",
+    "password": "12345678",
+    "age": "15",
+    "height": "150",
+    "weight": "15",
+    "bmr": 1017
+  },
+  {
+    "name": "Mero",
+    "password": "meromero",
+    "age": "14",
+    "height": "160",
+    "weight": "49",
+    "bmr": 1425
+  },
+  {
+    "name": "favabeans",
+    "password": "12345678",
+    "age": "20",
+    "height": "179",
+    "weight": "60",
+    "bmr": 1623
+  }
+]

@@ -1,0 +1,113 @@
+/* Root styles */
+:root {
+  --primary-color: rgb(17, 153, 153);
+  --secondary-color: rgb(71, 226, 71);
+  --white: #f4f4f4;
+  --text-color: #333;
+  --border-radius: 10px;
+  --input-width: 220px;
+  --input-height: 20px;
+  --button-height: 40px;
+}
+
+/* Body and background */
+body {
+  background: linear-gradient(
+    135deg,
+    rgba(71, 226, 71, 0.7),
+    rgba(17, 153, 153, 0.7)
+  );
+  background-size: 400% 400%;
+  animation: gradientBackground 15s ease infinite;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Container styling */
+.signup-container {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+  max-width: 320px;
+  width: 100%;
+}
+
+h1 {
+  color: var(--text-color);
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+/* Form styling */
+#registrationForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: 0.9em;
+  color: var(--text-color);
+  align-self: flex-start;
+}
+
+input {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  width: var(--input-width);
+  height: var(--input-height);
+  padding: 6px;
+  font-size: 0.85em;
+  color: var(--white);
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: var(--secondary-color);
+}
+
+.signup-button {
+  background-color: var(--primary-color);
+  width: var(--input-width);
+  height: var(--button-height);
+  border: none;
+  border-radius: var(--border-radius);
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 12px;
+}
+
+.signup-button:hover {
+  background-color: var(--secondary-color);
+}
+
+footer {
+  margin-top: 12px;
+  color: var(--white);
+  font-size: 0.85em;
+  text-align: center;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./styles/loginStyle.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <div class="nav-left">
+            <li class="nav-links"><a href="./index.html">Home</a></li>
+            <li class="nav-links">
+              <a href="./doctors.html">Contact Doctors</a>
+            </li>
+            <li class="nav-links"><a href="./sensorShop.html">Buy Sensors</a></li>
+          </div>
+          <div class="nav-right">
+            <li class="nav-links"><a href="./signup.html">Sign up</a></li>
+            <li class="nav-links active"><a href="./login.html">Login</a></li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <div class="form-container">
+      <h1>Login Form</h1>
+      <form action="/login" method="post">
+        <label>Name:</label>
+        <input type="text" name="name" required /><br />
+        <label>Password:</label>
+        <input type="password" name="password" pattern=".{8,}" title="Password must be at least 8 characters long" required /><br />
+        <input type="submit" value="Login" />
+      </form>
+    </div>
+    <footer>All CopyRights Reserved &copy;</footer>
+  </body>
+</html>

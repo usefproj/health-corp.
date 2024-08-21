@@ -1,0 +1,426 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --agreen: rgb(71, 226, 71);
+  --light-white: #f4f4f4;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--light-white);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+header {
+  align-self: stretch !important;
+}
+nav {
+  background-color: #222;
+  position: sticky;
+  padding: 0.7em;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-links,
+.nav-links a {
+  text-decoration: none;
+  list-style: none;
+  color: var(--light-white);
+  font-size: 1.1em;
+  position: relative;
+  padding-bottom: 5px;
+  transition: border-bottom 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+.nav-links a:hover::after,
+.active a::after {
+  background-color: var(--agreen);
+}
+.active a {
+  color: var(--agreen);
+}
+.nav-links a:hover {
+  color: var(--agreen);
+}
+.nav-links {
+  padding: 10px;
+}
+.nav-links {
+  color: whitesmoke;
+}
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 10px;
+}
+
+/* Other styles remain unchanged */
+
+/* Footer styling */
+footer {
+  background-color: #222;
+  color: var(--light-white);
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+  width: 100%;
+}
+
+.header-div {
+  background-color: var(--agreen);
+  color: var(--light-white);
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#title p {
+  font-size: 1.5em;
+  text-align: right;
+  margin-top: 20px;
+}
+.header-div img {
+  width: 40vh;
+}
+
+#recipeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.recipeCard {
+  background-color: var(--agreen);
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border-radius: 40px;
+  padding: 20px;
+  color: var(--light-white);
+}
+.recipeCard h2 {
+  color: black;
+}
+.recipeCard img {
+  border-radius: 20px;
+  width: 200px;
+}
+.recipeCard p {
+  text-align: center;
+}
+
+/* Modal styles */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  max-width: 800px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#doctors {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.card img {
+  width: 100px;
+}
+.card {
+  margin-top: 100px;
+  background-color: var(--agreen);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.card h3 {
+  color: var(--light-white);
+  text-align: center;
+}
+.card li {
+  color: var(--light-white);
+  text-align: center;
+  list-style: none;
+}
+.doc-info ul {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Apply gradient background to the body */
+body {
+  background: linear-gradient(
+    135deg,
+    rgba(71, 226, 71, 0.7),
+    rgba(17, 153, 153, 0.7)
+  );
+  background-size: 400% 400%;
+  animation: gradientBackground 15s ease infinite;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Animation for the gradient background */
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Style for the meals section */
+#meals {
+  background: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
+  margin: 20px;
+  text-align: center;
+}
+
+/* Ensure recipe cards look good against the background */
+.recipeCard {
+  background-color: var(--agreen); /* Maintains the original card color */
+  color: var(--light-white); /* Maintains the original text color */
+}
+
+/* Style for the input field and button */
+#ingredient {
+  margin: 10px;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: var(--agreen);
+  color: var(--light-white);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2b8a3e;
+}
+/* Style for the doctors section */
+#doctors {
+  background-color: rgba(34, 34, 34, 0.8); /* Darker background for contrast */
+  color: var(--light-white); /* Ensures text color is readable */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+}
+
+/* Ensure doctors cards look good against the background */
+.card {
+  background-color: var(--agreen);
+  color: var(--light-white);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Style for the meals section including new input fields */
+#meals {
+  background: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
+  margin: 20px;
+  text-align: center;
+}
+
+/* Style for the input field and button */
+#ingredient,
+#numberOfMeals {
+  margin: 10px;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: var(--agreen);
+  color: var(--light-white);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2b8a3e;
+}
+/* Style for the doctors section */
+#doctors {
+  background-color: rgba(34, 34, 34, 0.8); /* Darker background for contrast */
+  color: var(--light-white); /* Ensures text color is readable */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 100%; /* Ensure it fills the full width */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+  justify-content: center; /* Center cards horizontally */
+}
+
+/* Ensure doctors cards look good against the background */
+.card {
+  background-color: var(--agreen);
+  color: var(--light-white);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for doctor images */
+.card img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+/* Ensure the card content is properly aligned */
+.doc-info {
+  text-align: center;
+}
+
+/* Make sure icons are displayed properly */
+.doc-info a {
+  margin: 0 5px;
+  color: var(--light-white);
+  font-size: 1.2em;
+}
+
+/* Style for the recipe card's More Info button */
+.recipeCard button {
+  background-color: var(--agreen);
+  color: var(--light-white);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.recipeCard button:hover {
+  background-color: darkgreen;
+}
+
+/* Popup window styling */
+.popup {
+  display: none; /* Start hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* Slightly opaque background */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup.show {
+  display: flex; /* Show when class 'show' is added */
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  height: 80%;
+  position: relative;
+}
+
+.popup-content iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.popup .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+

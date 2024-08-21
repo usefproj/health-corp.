@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/d5073c3c7d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <div class="nav-left">
+            <li class="nav-links active"><a href="#">Home</a></li>
+            <li class="nav-links"><a href="#doctors">Contact Doctors</a></li>
+            <li class="nav-links">
+              <a href="./sensorShop.html">Buy Sensors</a>
+            </li>
+          </div>
+          <div class="nav-right" id="nav-right">
+            <li class="nav-links" id="signup-link">
+              <a href="./signup.html">Sign up</a>
+            </li>
+            <li class="nav-links" id="login-link">
+              <a href="./login.html">Login</a>
+            </li>
+            <li class="nav-links" id="username" style="display: none">
+              <span></span>
+            </li>
+            <li class="nav-links" id="logout-link" style="display: none">
+              <a href="/logout">Logout</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+      <div class="header-div">
+        <div id="title">
+          <h1>Welcome to Turbo-Meals Website</h1>
+          <p>-Using Leading Tech to Help You</p>
+        </div>
+        <img src="./imgs/app-img.svg" alt="Turbo-Meals application" />
+      </div>
+    </header>
+    <section id="meals">
+      <div id="user-data">
+        <h2 id="calories">Daily Calorie Intake:</h2>
+      </div>
+      <input
+        type="text"
+        id="ingredient"
+        placeholder="tomato, apple, pepperoni"
+      />
+      <input type="number" id="numberOfMeals" min="1" max="3" value="1" />
+      <button onclick="fetchRecipes()">Click Me!</button>
+      <div id="recipeContainer">
+        <!-- Recipe cards here -->
+      </div>
+    </section>
+    <section id="doctors">
+      <div class="card">
+        <img src="./imgs/person-img.svg" alt="doctor picture" />
+        <div class="doc-info">
+          <h3>John Doe</h3>
+          <ul>
+            <li>Location: 1st Monopoly St.</li>
+            <li>Number: 0112 367 9948</li>
+            <li>
+              <a href="https://www.facebook.com"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./imgs/person-img.svg" alt="doctor picture" />
+        <div class="doc-info">
+          <h3>Jane Smith</h3>
+          <ul>
+            <li>Location: 2nd Empire Rd.</li>
+            <li>Number: 0112 368 9948</li>
+            <li>
+              <a href="https://www.facebook.com"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./imgs/person-img.svg" alt="doctor picture" />
+        <div class="doc-info">
+          <h3>Emily Johnson</h3>
+          <ul>
+            <li>Location: 3rd Republic Ave.</li>
+            <li>Number: 0112 369 9948</li>
+            <li>
+              <a href="https://www.facebook.com"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./imgs/person-img.svg" alt="doctor picture" />
+        <div class="doc-info">
+          <h3>Michael Brown</h3>
+          <ul>
+            <li>Location: 4th Liberty St.</li>
+            <li>Number: 0112 370 9948</li>
+            <li>
+              <a href="https://www.facebook.com"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Add more doctor cards as needed -->
+    </section>
+
+    <footer>All CopyRights Reserved &copy;</footer>
+    <script src="./js/mealapp.js"></script>
+  </body>
+</html>

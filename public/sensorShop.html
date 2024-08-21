@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles/sensorStyle.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Buy a sensor!</title>
+
+    <nav>
+      <ul>
+        <div class="nav-left">
+          <li class="nav-links"><a href="./index.html">Home</a></li>
+          <li class="nav-links">
+            <a href="#doctors">Contact Doctors</a>
+          </li>
+          <li class="nav-links"><a href="./sensorShop.html">Buy Sensors</a></li>
+        </div>
+        <div class="nav-right">
+          <li class="nav-links"><a href="./signup.html">Sign up</a></li>
+          <li class="nav-links active"><a href="./login.html">Login</a></li>
+        </div>
+      </ul>
+    </nav>
+  </head>
+
+  <body>
+    <h1>Buy a food identifier sensor</h1>
+
+    <div class="sensor-container">
+      <!-- first sensor -->
+      <div class="sensor-card">
+        <h1>Budget option</h1>
+        <img class="sensor-img" src="./imgs/img1.jpg" />
+        <h2 class="price">119$</h2>
+        <button class="sensor-btn" id="sensor-btn1">Show info</button>
+      </div>
+
+      <!-- Second sensor -->
+      <div class="sensor-card">
+        <h1>Best option</h1>
+        <img class="sensor-img" src="./imgs/img2.jpg" />
+        <h2 class="price">149$</h2>
+        <button class="sensor-btn" id="sensor-btn2">Show info</button>
+        <h4 class="bestseller">Best Seller!!!</h4>
+      </div>
+
+      <!-- Third sensor -->
+      <div class="sensor-card">
+        <h1>Premium option</h1>
+        <img class="sensor-img" src="./imgs/img3.jpg" />
+        <h2 class="price">199$</h2>
+        <button class="sensor-btn" id="sensor-btn3">Show info</button>
+      </div>
+
+      <!-- Divs for paragraphs -->
+      <div class="sensor-p" id="sensor-p1">
+        <p>
+          <b>basic</b> food detection sensor in a smart fridge uses simple
+          cameras or RFID tags to identify and track food items. It helps manage
+          inventory and provides basic reminders about expiration dates,
+          offering a cost-effective way to reduce food waste.
+        </p>
+      </div>
+      <!-- second paragraph -->
+      <div class="sensor-p" id="sensor-p2">
+        <p>
+          The <b>top-tier</b> food detection sensor combines AI, multiple
+          sensors, and advanced data processing to offer the most accurate food
+          identification and management. It integrates seamlessly with other
+          smart home devices, providing real-time updates, personalized
+          recommendations, and extensive inventory tracking, making it the
+          ultimate choice for food management in a smart fridge.
+        </p>
+      </div>
+
+      <!-- Third paragraph -->
+      <div class="sensor-p" id="sensor-p3">
+        <p>
+          An <b>advanced</b> food detection sensor in a high-end smart fridge
+          uses AI-driven image recognition and smart algorithms to identify food
+          items with greater accuracy. It can suggest recipes, track expiration
+          dates, and even recommend grocery lists, providing a more
+          comprehensive food management experience.
+        </p>
+      </div>
+    </div>
+
+    <div class="sensor-container2">
+      <div class="sensor-whybuy">
+        <h1>Why buy one?</h1>
+        <p class="sensor-whybuy-txt">
+          A food detection sensor is a valuable tool for ensuring food safety
+          and quality by detecting contaminants and spoilage in real-time.
+          Unlike other products on the market, this sensor provides a unique,
+          unparalleled service with its advanced technology and accuracy. It
+          offers peace of mind by catching potential issues before they become
+          serious, reducing waste, and maintaining high hygiene standards. For
+          anyone serious about food safety, this sensor stands out as a
+          <mark><b>one-of-a-kind solution.</b></mark>
+        </p>
+      </div>
+
+      <div class="sensor-buy">
+        <button class="sensor-buy-btn">Buy</button>
+      </div>
+    </div>
+
+    <div class="sensor-overlay" id="sensor-overlay"></div>
+
+    <script src="./js/js.js"></script>
+  </body>
+</html>

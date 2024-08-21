@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./styles/signupStyle.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <div class="nav-left">
+            <li class="nav-links"><a href="index.html">Home</a></li>
+            <li class="nav-links">
+              <a href="doctors.html">Contact Doctors</a>
+            </li>
+            <li class="nav-links"><a href="sensorShop.html">Buy Sensors</a></li>
+          </div>
+          <div class="nav-right">
+            <li class="nav-links active"><a href="Signup.html">Sign up</a></li>
+            <li class="nav-links"><a href="login.html">Login</a></li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <div class="signup-container">
+        <div class="form-section">
+            <h1>Registration Form</h1>
+            <form id="registrationForm" action="/submit" method="post">
+                <label for="name">Name:</label> <br>
+                <input type="text" id="name" name="name" required /><br>
+
+                <label for="password">Password:</label><br>
+                <input type="password" name="password" pattern=".{8,}" title="Password must be at least 8 characters long" required /><br>
+
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age" min="1" max="120" required /><br>
+
+                <label for="height">Height (in cm):</label><br>
+                <input type="number" id="height" name="height" min="40" max="300"required /><br>
+
+                <label for="weight">Weight (in kg):</label><br>
+                <input type="number" id="weight" name="weight" min="10" max="400" /><br>
+              </div>
+                <div class="buttons">
+                    <button type="submit" class="signup-button">Submit</button>
+                </div>
+            </form>
+       
+    
+    </div>
+    <footer>All CopyRights Reserved &copy;</footer>
+    <script src="app.js"></script>
+  </body>
+</html>
