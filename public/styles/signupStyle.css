@@ -106,6 +106,9 @@ input:focus {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   margin-top: 12px;
   color: var(--white);
   font-size: 0.85em;
